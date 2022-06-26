@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferpfand</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./js/template.js"></script>
+    <script src="./js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="render()">
+    <div class="header">
+        <img class="logo" src="img/lieferando_logo.svg" alt="">
+        <p class="adress">Hauptstraße 47, 51465 Bergisch Gladbach</p>
+        <img class="menu-icon" src="img/menu.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="header-img">
+                <div class="round-logo">
+                    <img src="img/logo_test.png" alt="">
+                </div>
+            </div>
+            <div class="max-width">
+                <h1>Pizzaboy</h1>
+                <div class="star-rating">
+                    <input type="image" src="img/star_yellow.svg">
+                    <input type="image" src="img/star_yellow.svg">
+                    <input type="image" src="img/star_yellow.svg">
+                    <input type="image" src="img/star_yellow.svg">
+                    <input class="black-star" type="image" src="img/star.svg">
+                    <a href="#">(Alle Bewertungen)</a>
+                </div>
+                <p>Bei diesem Restaurant kannst du Stempel sammeln. Stelle beim Bestellabschluss bitte sicher,
+                    dass du dich für unseren Newsletter angemeldet hast, um deine Stempel per E-Mail zu
+                    erhalten.</p>
+            </div>
+            <div class="search-categorie sticky">
+                <div class="menu-categorie  max-width">
+                    <img src="img/search.svg" alt="">
+                    <div class="scroll">
+                        <a href="#">Beliebte&nbsp;Gerichte</a>
+                        <a href="#">Salate</a>
+                        <a href="#pizza-header">Pizza</a>
+                        <a href="#">Calzone</a>
+                        <a href="#">Pizzabrötchen</a>
+                        <a href="#pasta-header">Pasta</a>
+                        <a href="#">Pizza</a>
+                        <a href="#">Calzone</a>
+                        <a href="#">Pizzabrötchen</a>
+                        <a href="#">Pasta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorie-header" id="pizza-header">
+                <img src="img/pizza_header_2.jpg" alt="">
+                <h2 class="menu-header">Pizza Gerichte</h2>
+            </div>
+            <div class="dishes-container" id="pizza">
+                <!-- ** Pizza Gerichte -->
+            </div>
+            <div class="categorie-header" id="pasta-header">
+                <img src="img/pasta_header.jpg" alt="">
+                <h2 class="menu-header">Pasta Gerichte</h2>
+            </div>
+            <div class="dishes-container" id="pasta">
+                <!-- ** Pasta Gerichte -->
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cart-container sticky">
+                <div class="cart-header">
+                    <h4>Warenkorb</h4>
+                </div>
+                <div class="empty-cart" id="empty-cart">
+                    <img class="icon" src="img/cart.svg" alt="">
+                    <h4>Fülle deinen Warenkorb</h4>
+                    <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+                </div>
+                <div class="select-cart d-none" id="cart">
+                    <div class="scroll-selected-dishes" id="selected-dishes">
+                        <!-- ** Essensauswahl -->
+                    </div>
+                    <div class="overview-costs" id="overview-costs">
+                        <!-- ** Kostenübersicht -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sd-cart" id="sd-cart">
+            <!-- ** Warenkorb Button -->
+        </div>
+        <div class="sd-overview d-none" id="sd-overview">
+            <div>
+                <div class="sd-cart-header">
+                    <h4>Warenkorb</h4>
+                    <img src="img/close.svg" alt="" onclick="closeSdOverview()">
+                </div>
+                <div id="sd-selected-dishes">
+                    <!-- ** Essenauswahl sd -->
+                </div>
+            </div>
+            <div class="sd-overview-costs" id="sd-overview-costs">
+                <!-- ** Kostenübersicht sd -->
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
